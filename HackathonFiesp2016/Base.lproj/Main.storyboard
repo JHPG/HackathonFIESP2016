@@ -31,7 +31,7 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" misplaced="YES" id="ZvW-zZ-KoB">
                                         <rect key="frame" x="16" y="80" width="343" height="112"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="200 pessoas já almoçaram" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="j1X-qq-W7c">
                                                 <frame key="frameInset" minX="18" minY="17" width="239" height="28"/>
@@ -62,7 +62,7 @@
                                     </view>
                                     <view contentMode="scaleToFill" misplaced="YES" id="NhN-7x-OP8">
                                         <rect key="frame" x="16" y="324" width="343" height="150"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Pontuação" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ewS-Eb-mZM">
                                                 <frame key="frameInset" minX="22" minY="8" width="129" height="21"/>
@@ -100,7 +100,7 @@
                                     </view>
                                     <view contentMode="scaleToFill" id="bx4-eU-Vi6">
                                         <rect key="frame" x="16" y="-46" width="343" height="112"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tempo de espera previsto" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SZX-iV-WQW">
                                                 <frame key="frameInset" minX="18" minY="17" width="239" height="28"/>
@@ -131,7 +131,7 @@
                                     </view>
                                     <view contentMode="scaleToFill" misplaced="YES" id="RYM-r9-Yu1">
                                         <rect key="frame" x="16" y="201" width="343" height="112"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puts, parece que agora ainda não é uma boa hora para o almoço" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dMJ-3Z-IYr">
                                                 <frame key="frameInset" minX="21" minY="13" width="247" height="86"/>
