@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33CBAF062505DE567223ADAB /* Pods_HackathonFiesp2016.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 696EFF66E1FBB0D697D82574 /* Pods_HackathonFiesp2016.framework */; };
 		D6ADA9321DB2B1CA00E52B15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ADA9311DB2B1CA00E52B15 /* AppDelegate.swift */; };
 		D6ADA9341DB2B1CA00E52B15 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ADA9331DB2B1CA00E52B15 /* FirstViewController.swift */; };
 		D6ADA9361DB2B1CA00E52B15 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ADA9351DB2B1CA00E52B15 /* SecondViewController.swift */; };
@@ -20,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D5D946F140526840228D568 /* Pods-HackathonFiesp2016.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackathonFiesp2016.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackathonFiesp2016/Pods-HackathonFiesp2016.release.xcconfig"; sourceTree = "<group>"; };
+		696EFF66E1FBB0D697D82574 /* Pods_HackathonFiesp2016.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackathonFiesp2016.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3A9A3CB01EE20742E3A7D36 /* Pods-HackathonFiesp2016.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackathonFiesp2016.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackathonFiesp2016/Pods-HackathonFiesp2016.debug.xcconfig"; sourceTree = "<group>"; };
 		D6ADA92E1DB2B1CA00E52B15 /* HackathonFiesp2016.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackathonFiesp2016.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6ADA9311DB2B1CA00E52B15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6ADA9331DB2B1CA00E52B15 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -39,17 +43,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33CBAF062505DE567223ADAB /* Pods_HackathonFiesp2016.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5473F78E6985985C258413A0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3A9A3CB01EE20742E3A7D36 /* Pods-HackathonFiesp2016.debug.xcconfig */,
+				4D5D946F140526840228D568 /* Pods-HackathonFiesp2016.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D6ADA9251DB2B1C900E52B15 = {
 			isa = PBXGroup;
 			children = (
 				D6ADA9301DB2B1CA00E52B15 /* HackathonFiesp2016 */,
 				D6ADA92F1DB2B1CA00E52B15 /* Products */,
+				5473F78E6985985C258413A0 /* Pods */,
+				F419E0B76520C9DC8DF60B6D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +103,14 @@
 			name = SF;
 			sourceTree = "<group>";
 		};
+		F419E0B76520C9DC8DF60B6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				696EFF66E1FBB0D697D82574 /* Pods_HackathonFiesp2016.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -94,9 +118,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D6ADA9421DB2B1CA00E52B15 /* Build configuration list for PBXNativeTarget "HackathonFiesp2016" */;
 			buildPhases = (
+				697DFBA771C010CC57AF44BA /* [CP] Check Pods Manifest.lock */,
 				D6ADA92A1DB2B1C900E52B15 /* Sources */,
 				D6ADA92B1DB2B1C900E52B15 /* Frameworks */,
 				D6ADA92C1DB2B1C900E52B15 /* Resources */,
+				B5192001845E6BF149A3F7DF /* [CP] Embed Pods Frameworks */,
+				7F6A7DE2681FD123C02CCE5F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -157,6 +184,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		697DFBA771C010CC57AF44BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7F6A7DE2681FD123C02CCE5F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackathonFiesp2016/Pods-HackathonFiesp2016-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5192001845E6BF149A3F7DF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HackathonFiesp2016/Pods-HackathonFiesp2016-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D6ADA92A1DB2B1C900E52B15 /* Sources */ = {
@@ -284,6 +359,7 @@
 		};
 		D6ADA9431DB2B1CA00E52B15 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3A9A3CB01EE20742E3A7D36 /* Pods-HackathonFiesp2016.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HackathonFiesp2016/Info.plist;
@@ -296,6 +372,7 @@
 		};
 		D6ADA9441DB2B1CA00E52B15 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D5D946F140526840228D568 /* Pods-HackathonFiesp2016.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HackathonFiesp2016/Info.plist;
