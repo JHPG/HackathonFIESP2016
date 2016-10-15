@@ -325,6 +325,7 @@
 				D6ADA9441DB2B1CA00E52B15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

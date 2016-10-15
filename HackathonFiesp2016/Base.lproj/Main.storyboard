@@ -161,7 +161,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.88627450980392153" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Restaurante" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Restaurante" image="Cutlery-100" id="acW-dT-cKf"/>
                     <navigationItem key="navigationItem" title="Restaurante" id="nrv-DA-qzf"/>
                     <connections>
                         <outletCollection property="cards" destination="bx4-eU-Vi6" collectionClass="NSMutableArray" id="Jkq-iF-Gpa"/>
@@ -198,7 +198,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Cardápio" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Cardápio" image="Waiter-100" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -208,7 +208,7 @@
         <scene sceneID="WZK-Rf-SzP">
             <objects>
                 <navigationController id="Hz0-mS-OXH" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Restaurante" image="second" id="c4a-WD-ox2"/>
+                    <tabBarItem key="tabBarItem" title="Restaurante" image="Cutlery-100" id="c4a-WD-ox2"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="GFJ-A8-eN8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -221,7 +221,7 @@
             </objects>
             <point key="canvasLocation" x="468.75" y="-365.73833333333329"/>
         </scene>
-        <!--Perfil-->
+        <!--Social-->
         <scene sceneID="df0-Lx-Oxc">
             <objects>
                 <viewController id="0JT-GA-y3g" sceneMemberID="viewController">
@@ -237,7 +237,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Perfil" image="second" id="TFa-V7-tOp"/>
+                    <tabBarItem key="tabBarItem" title="Social" image="Meeting-100" id="TFa-V7-tOp"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oUh-93-5v4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -323,11 +323,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Cutlery-100" width="30" height="30"/>
         <image name="Future-96" width="96" height="96"/>
+        <image name="Meeting-100" width="30" height="30"/>
         <image name="Olympic Medal Gold-96" width="96" height="96"/>
         <image name="Spaghetti-96" width="96" height="96"/>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="Waiter-100" width="30" height="30"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
