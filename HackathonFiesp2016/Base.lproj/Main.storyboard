@@ -224,7 +224,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7SR-mP-64m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1914.5" y="443.5"/>
+            <point key="canvasLocation" x="1893" y="1323"/>
         </scene>
         <!--Cardápio-->
         <scene sceneID="wg7-f3-ORb">
@@ -332,30 +332,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" id="qXm-MP-gf0">
-                                <rect key="frame" x="16" y="582" width="343" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SbT-2K-CPH">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="65"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="18"/>
-                                        <state key="normal" title="Sair"/>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
                             <view contentMode="scaleToFill" misplaced="YES" id="dwN-G5-xCu">
                                 <rect key="frame" x="16" y="83" width="343" height="370"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Waiter-color" id="DBU-1W-lLX">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="User-96" id="DBU-1W-lLX">
                                         <rect key="frame" x="126" y="19" width="90" height="90"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
@@ -409,10 +390,33 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <view contentMode="scaleToFill" misplaced="YES" id="qXm-MP-gf0">
+                                <rect key="frame" x="16" y="540" width="343" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SbT-2K-CPH">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="18"/>
+                                        <state key="normal" title="Sair"/>
+                                        <connections>
+                                            <segue destination="I2i-rd-Y11" kind="modal" id="SLA-fy-Wes"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.88627450980392153" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outletCollection property="cards" destination="dwN-G5-xCu" collectionClass="NSMutableArray" id="t1B-Qo-ZgX"/>
                         <outletCollection property="cards" destination="qXm-MP-gf0" collectionClass="NSMutableArray" id="dXg-Lw-u4e"/>
@@ -420,7 +424,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J2H-8e-qxu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-23.5" y="-759.5"/>
+            <point key="canvasLocation" x="-22" y="-844"/>
         </scene>
         <!--Restaurante-->
         <scene sceneID="WZK-Rf-SzP">
@@ -536,7 +540,24 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p9j-N0-hn4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-24" y="1537"/>
+            <point key="canvasLocation" x="225" y="1918"/>
+        </scene>
+        <!--Social-->
+        <scene sceneID="APp-3k-Mzz">
+            <objects>
+                <navigationController id="V8V-ur-upR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Social" image="Meeting-100" id="0oK-FD-7Sg"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="foO-XI-DbR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="0JT-GA-y3g" kind="relationship" relationship="rootViewController" id="6n2-RL-D64"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qAs-yQ-ybg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-319" y="1174"/>
         </scene>
         <!--Social-->
         <scene sceneID="df0-Lx-Oxc">
@@ -547,7 +568,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" misplaced="YES" id="7Z5-y0-Mi9">
-                                <rect key="frame" x="16" y="48" width="343" height="251"/>
+                                <rect key="frame" x="16" y="78" width="343" height="205"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Meeting-96-color" id="zwR-S3-Mtc">
@@ -555,7 +576,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="55" sectionHeaderHeight="28" sectionFooterHeight="28" id="ivY-uU-mtG">
-                                        <rect key="frame" x="103" y="37" width="222" height="200"/>
+                                        <rect key="frame" x="103" y="37" width="222" height="155"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.98420697450637817" green="0.98437517881393433" blue="0.98419648408889771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <prototypes>
@@ -660,6 +681,12 @@
                                         <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" id="31u-JL-cJM">
+                                        <rect key="frame" x="16" y="143" width="79" height="49"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="14"/>
+                                        <state key="normal" title="Adicionar colega"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <userDefinedRuntimeAttributes>
@@ -670,7 +697,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" misplaced="YES" id="AtV-b6-GpK">
-                                <rect key="frame" x="16" y="316" width="343" height="150"/>
+                                <rect key="frame" x="16" y="291" width="343" height="143"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pontuação" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="G6w-QV-cVS">
@@ -680,10 +707,6 @@
                                         <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Olympic Medal Gold-96" id="1UE-f8-gu9">
-                                        <rect key="frame" x="8" y="37" width="100" height="100"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="40 pontos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wCF-fh-TXm">
                                         <rect key="frame" x="108" y="69" width="198" height="54"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -698,6 +721,53 @@
                                         <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Olympic Medal Gold-96" id="1UE-f8-gu9">
+                                        <rect key="frame" x="8" y="35" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" id="Q3h-u4-Eq1">
+                                <rect key="frame" x="16" y="442" width="343" height="143"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Consiga mais pontos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CzW-fF-FGL">
+                                        <rect key="frame" x="22" y="16" width="196" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="18"/>
+                                        <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="E troque por sobremesas melhores " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zza-CD-afq">
+                                        <rect key="frame" x="22" y="37" width="244" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="13"/>
+                                        <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="• Vá ao restaurante fora dos horários de pico " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="f0M-HF-qfB">
+                                        <rect key="frame" x="22" y="102" width="305" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="14"/>
+                                        <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KuF-68-WgB">
+                                        <rect key="frame" x="22" y="71" width="181" height="23"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="14"/>
+                                        <state key="normal" title="• Avalie nosso serviço"/>
+                                        <connections>
+                                            <segue destination="BYy-uL-qbf" kind="push" id="CxZ-hK-Rs6"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <userDefinedRuntimeAttributes>
@@ -711,10 +781,11 @@
                         <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Social" image="Meeting-100" id="TFa-V7-tOp"/>
+                    <navigationItem key="navigationItem" id="5QT-uO-Icz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oUh-93-5v4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-22.5" y="835.5"/>
+            <point key="canvasLocation" x="204.5" y="1322.5"/>
         </scene>
         <!--Login-->
         <scene sceneID="UEi-FD-MkR">
@@ -741,6 +812,7 @@
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kXU-df-gyJ">
                                 <rect key="frame" x="150" y="336" width="71" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Entrar"/>
                                 <connections>
                                     <segue destination="49e-Tb-3d3" kind="modal" id="btc-Jz-V0W"/>
@@ -799,7 +871,7 @@
                     <connections>
                         <segue destination="Hz0-mS-OXH" kind="relationship" relationship="viewControllers" id="4ca-oc-TUl"/>
                         <segue destination="xTb-bE-3vW" kind="relationship" relationship="viewControllers" id="9BK-59-Ol6"/>
-                        <segue destination="0JT-GA-y3g" kind="relationship" relationship="viewControllers" id="V7J-hM-yPY"/>
+                        <segue destination="V8V-ur-upR" kind="relationship" relationship="viewControllers" id="i8M-Pm-Drv"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -904,21 +976,21 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gxc-bu-FX8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1441.5" y="443.5"/>
+            <point key="canvasLocation" x="1338" y="1323"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="NuN-4f-0Qi">
+        <!--Restaurante-->
+        <scene sceneID="lRC-Bo-Lrn">
             <objects>
-                <viewController id="dYk-Ql-CS1" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ng2-jp-IEn">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gh6-s4-bY5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="jyg-dS-JeL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Restaurante" image="Cutlery-100" id="FsH-OM-0zR"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VBc-Tg-VVJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="paL-hb-QvY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-655" y="1021"/>
+            <point key="canvasLocation" x="468.75" y="-365.73833333333329"/>
         </scene>
     </scenes>
     <resources>
@@ -929,6 +1001,7 @@
         <image name="Olympic Medal Gold-96" width="96" height="96"/>
         <image name="Spaghetti-96" width="96" height="96"/>
         <image name="Two Tickets-96" width="96" height="96"/>
+        <image name="User-96" width="96" height="96"/>
         <image name="Waiter-100" width="30" height="30"/>
         <image name="Waiter-color" width="96" height="96"/>
         <image name="fbloginbutton" width="403" height="88"/>
@@ -940,6 +1013,7 @@
         <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="CxZ-hK-Rs6"/>
         <segue reference="btc-Jz-V0W"/>
     </inferredMetricsTieBreakers>
 </document>
