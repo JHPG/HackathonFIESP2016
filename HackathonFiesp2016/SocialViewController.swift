@@ -46,6 +46,13 @@ class SocialViewController: UIViewController, UITableViewDelegate {
         self.navigationController?.pushViewController(controller, animated: true)
     }
     
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        
+        
+        
+    }
+
+    
     
 }
 

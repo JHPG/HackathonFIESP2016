@@ -58,7 +58,7 @@ class FirstViewController: UIViewController {
                     self.lbGoodTimeForLunchSmile.text = ":)"
                     self.lbGoodTimeForLaunchBG.backgroundColor = UIColor.okGreen
                 } else if can == "N" {
-                    self.lbGoodTimeForLaunch.text = "Agora parece estar meio cheio, não quer tentar ir mais tarde?"
+                    self.lbGoodTimeForLaunch.text = "Agora parece que está meio cheio. Não quer tentar ir um pouco mais tarde?"
                     self.lbGoodTimeForLunchSmile.text = ":("
                     self.lbGoodTimeForLaunchBG.backgroundColor = UIColor.dangerRed
                 } // else if can == 0 {
