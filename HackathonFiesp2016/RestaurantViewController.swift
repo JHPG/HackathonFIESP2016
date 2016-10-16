@@ -48,16 +48,16 @@ class FirstViewController: UIViewController {
                 self.lbNumberLunched.text = "\(num) pessoas já almoçaram"
             }
             
-            if let num = json["porPessoasAlmocaram"] as? Float {
+            if let num = json["percentualPessoasAlmocaram"] as? Float {
                 self.lbPercentLunched.text = "\(Int(num)) %"
             }
             
-            if let can = json["podeAlmocar"] as? Bool {
-                if can {//== 1 {
+            if let can = json["podeAlmocar"] as? String {
+                if can == "S" {
                     self.lbGoodTimeForLaunch.text = "Agora parece ser uma boa hora para ir almoçar!"
                     self.lbGoodTimeForLunchSmile.text = ":)"
                     self.lbGoodTimeForLaunchBG.backgroundColor = UIColor.okGreen
-                } else { //if can == -1 {
+                } else if can == "N" {
                     self.lbGoodTimeForLaunch.text = "Agora parece estar meio cheio, não quer tentar ir mais tarde?"
                     self.lbGoodTimeForLunchSmile.text = ":("
                     self.lbGoodTimeForLaunchBG.backgroundColor = UIColor.dangerRed
