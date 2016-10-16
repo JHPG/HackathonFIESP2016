@@ -27,6 +27,27 @@ class CardViewManager {
 
 }
 
+
+//extension UIView {
+//    
+//    var myshadow: Bool {
+//        set {
+//            if myshadow {
+//                let view = self
+//                let shadowPath = UIBezierPath(rect: view.bounds)
+//                view.layer.masksToBounds = false
+//                view.layer.shadowColor = UIColor.black.cgColor
+//                view.layer.shadowOffset = CGSize(width: 0, height: 0.5)
+//                view.layer.shadowOpacity = 0.2
+//                view.layer.shadowPath = shadowPath.cgPath
+//            }
+//        }
+//        get{
+//            return false
+//        }
+//    }
+//}
+
 import Alamofire
 
 typealias JsonObject = [String: AnyObject]
