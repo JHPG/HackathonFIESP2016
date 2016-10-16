@@ -17,6 +17,9 @@ class SecondViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         CardViewManager.setShadow(cards)
+        
+        let pButton = UIBarButtonItem(title: "Perfil", style: UIBarButtonItemStyle.plain, target: self, action: #selector(FirstViewController.goToProfile))
+        navigationItem.rightBarButtonItem = pButton
     }
 
     override func didReceiveMemoryWarning() {
