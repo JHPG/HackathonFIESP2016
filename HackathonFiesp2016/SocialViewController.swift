@@ -29,6 +29,12 @@ class SocialViewController: UIViewController, UITableViewDelegate {
         
         let pButton = UIBarButtonItem(title: "Perfil", style: UIBarButtonItemStyle.plain, target: self, action: #selector(FirstViewController.goToProfile))
         navigationItem.rightBarButtonItem = pButton
+        
+        APIManager.getAPIdata() { json in
+            if let score = json["pontuacao"] as? Int {
+                self.score.text = "\(score) pontos"
+            }
+        }
     }
     
     override func didReceiveMemoryWarning() {

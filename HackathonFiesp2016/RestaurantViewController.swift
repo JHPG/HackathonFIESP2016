@@ -17,7 +17,9 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var lbGoodTimeForLaunch: UILabel!
     @IBOutlet weak var lbGoodTimeForLunchSmile: UILabel!
     @IBOutlet weak var lbGoodTimeForLaunchBG: UIView!
-//    @IBOutlet weak var lbPoints: UILabel!
+    @IBOutlet weak var bestHour: UILabel!
+    @IBOutlet weak var lbGoodTimeTitle: UILabel!
+    @IBOutlet weak var lbAvailableSeats: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,10 +30,16 @@ class FirstViewController: UIViewController {
         let pButton = UIBarButtonItem(title: "Perfil", style: UIBarButtonItemStyle.plain, target: self, action: #selector(FirstViewController.goToProfile))
         navigationItem.rightBarButtonItem = pButton
         
-        self.lbGoodTimeForLaunch.text = "--"
-        self.lbNumberLunched.text = "--"
-        self.lbWaitingTime.text = "--"
+        let updatingText = "..." // "--"
+        
+        self.lbGoodTimeForLaunch.text = updatingText
         self.lbGoodTimeForLunchSmile.text = ":|"
+        self.lbNumberLunched.text = updatingText
+        self.lbWaitingTime.text = updatingText
+        self.lbPercentLunched.text = updatingText
+        self.bestHour.text = updatingText
+        self.lbAvailableSeats.text = updatingText
+        
         
         Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(FirstViewController.updateData), userInfo: nil, repeats: true)
     }
@@ -48,8 +56,12 @@ class FirstViewController: UIViewController {
                 self.lbWaitingTime.text = "\(Int(wait)) min"
             }
             
-            if let num = json["qtdPessoasAlmocaram"] as? Int {
-                self.lbNumberLunched.text = "\(num) pessoas já almoçaram"
+            if let num = json["qtd_lugares_Ocupados"] as? Int {
+                self.lbNumberLunched.text = "\(num) pessoas estão almoçando"
+            }
+            
+            if let qtd = json["qtd_lugares_Livres"] as? Int {
+                self.lbAvailableSeats.text = "\(qtd) lugares disponíveis"
             }
             
             if let num = json["percentualPessoasAlmocaram"] as? Float {
@@ -58,14 +70,20 @@ class FirstViewController: UIViewController {
             
             if let can = json["podeAlmocar"] as? String {
                 if can == "S" {
+                    self.lbGoodTimeTitle.text = "Talvez seja rápido"
                     self.lbGoodTimeForLaunch.text = "Agora parece ser uma boa hora para ir almoçar!"
                     self.lbGoodTimeForLunchSmile.text = ":)"
                     self.lbGoodTimeForLaunchBG.backgroundColor = UIColor.okGreen
                 } else if can == "N" {
+                    self.lbGoodTimeTitle.text = "Talvez demore"
                     self.lbGoodTimeForLaunch.text = "Agora parece que está meio cheio. Não quer tentar ir um pouco mais tarde?"
                     self.lbGoodTimeForLunchSmile.text = ":("
                     self.lbGoodTimeForLaunchBG.backgroundColor = UIColor.dangerRed
                 }
+            }
+            
+            if let best = json["melhorHorario"] as? String {
+                self.bestHour.text = best
             }
             
             print("Data: \(json)")
