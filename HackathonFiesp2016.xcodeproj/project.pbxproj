@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		33CBAF062505DE567223ADAB /* Pods_HackathonFiesp2016.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 696EFF66E1FBB0D697D82574 /* Pods_HackathonFiesp2016.framework */; };
+		D680EDAD1DB3074B00C784C8 /* CardViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D680EDAC1DB3074B00C784C8 /* CardViewManager.swift */; };
 		D6ADA9321DB2B1CA00E52B15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ADA9311DB2B1CA00E52B15 /* AppDelegate.swift */; };
-		D6ADA9341DB2B1CA00E52B15 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ADA9331DB2B1CA00E52B15 /* FirstViewController.swift */; };
-		D6ADA9361DB2B1CA00E52B15 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ADA9351DB2B1CA00E52B15 /* SecondViewController.swift */; };
+		D6ADA9341DB2B1CA00E52B15 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ADA9331DB2B1CA00E52B15 /* RestaurantViewController.swift */; };
+		D6ADA9361DB2B1CA00E52B15 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ADA9351DB2B1CA00E52B15 /* MenuViewController.swift */; };
 		D6ADA9391DB2B1CA00E52B15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6ADA9371DB2B1CA00E52B15 /* Main.storyboard */; };
 		D6ADA93B1DB2B1CA00E52B15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6ADA93A1DB2B1CA00E52B15 /* Assets.xcassets */; };
 		D6ADA93E1DB2B1CA00E52B15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6ADA93C1DB2B1CA00E52B15 /* LaunchScreen.storyboard */; };
@@ -24,10 +25,11 @@
 		4D5D946F140526840228D568 /* Pods-HackathonFiesp2016.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackathonFiesp2016.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackathonFiesp2016/Pods-HackathonFiesp2016.release.xcconfig"; sourceTree = "<group>"; };
 		696EFF66E1FBB0D697D82574 /* Pods_HackathonFiesp2016.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackathonFiesp2016.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3A9A3CB01EE20742E3A7D36 /* Pods-HackathonFiesp2016.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackathonFiesp2016.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackathonFiesp2016/Pods-HackathonFiesp2016.debug.xcconfig"; sourceTree = "<group>"; };
+		D680EDAC1DB3074B00C784C8 /* CardViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewManager.swift; sourceTree = "<group>"; };
 		D6ADA92E1DB2B1CA00E52B15 /* HackathonFiesp2016.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackathonFiesp2016.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6ADA9311DB2B1CA00E52B15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D6ADA9331DB2B1CA00E52B15 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		D6ADA9351DB2B1CA00E52B15 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		D6ADA9331DB2B1CA00E52B15 /* RestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
+		D6ADA9351DB2B1CA00E52B15 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		D6ADA9381DB2B1CA00E52B15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D6ADA93A1DB2B1CA00E52B15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6ADA93D1DB2B1CA00E52B15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -81,8 +83,9 @@
 			isa = PBXGroup;
 			children = (
 				D6ADA9311DB2B1CA00E52B15 /* AppDelegate.swift */,
-				D6ADA9331DB2B1CA00E52B15 /* FirstViewController.swift */,
-				D6ADA9351DB2B1CA00E52B15 /* SecondViewController.swift */,
+				D6ADA9331DB2B1CA00E52B15 /* RestaurantViewController.swift */,
+				D6ADA9351DB2B1CA00E52B15 /* MenuViewController.swift */,
+				D680EDAC1DB3074B00C784C8 /* CardViewManager.swift */,
 				D6ADA9371DB2B1CA00E52B15 /* Main.storyboard */,
 				D6ADA9471DB2E1AA00E52B15 /* SF */,
 				D6ADA93A1DB2B1CA00E52B15 /* Assets.xcassets */,
@@ -239,9 +242,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6ADA9361DB2B1CA00E52B15 /* SecondViewController.swift in Sources */,
+				D680EDAD1DB3074B00C784C8 /* CardViewManager.swift in Sources */,
+				D6ADA9361DB2B1CA00E52B15 /* MenuViewController.swift in Sources */,
 				D6ADA9321DB2B1CA00E52B15 /* AppDelegate.swift in Sources */,
-				D6ADA9341DB2B1CA00E52B15 /* FirstViewController.swift in Sources */,
+				D6ADA9341DB2B1CA00E52B15 /* RestaurantViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
