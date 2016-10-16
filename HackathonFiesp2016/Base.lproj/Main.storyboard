@@ -562,7 +562,7 @@
         <!--Social-->
         <scene sceneID="df0-Lx-Oxc">
             <objects>
-                <viewController id="0JT-GA-y3g" sceneMemberID="viewController">
+                <viewController title="Social" id="0JT-GA-y3g" customClass="SocialViewController" customModule="HackathonFiesp2016" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ddL-2h-tnt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -781,7 +781,13 @@
                         <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Social" image="Meeting-100" id="TFa-V7-tOp"/>
-                    <navigationItem key="navigationItem" id="5QT-uO-Icz"/>
+                    <navigationItem key="navigationItem" title="Social" id="5QT-uO-Icz"/>
+                    <connections>
+                        <outlet property="score" destination="wCF-fh-TXm" id="kTa-Ks-fP2"/>
+                        <outletCollection property="cards" destination="Q3h-u4-Eq1" id="kwa-aY-DYF"/>
+                        <outletCollection property="cards" destination="AtV-b6-GpK" id="rFp-8Y-vac"/>
+                        <outletCollection property="cards" destination="7Z5-y0-Mi9" id="Rcx-9J-41o"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oUh-93-5v4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
