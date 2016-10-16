@@ -33,6 +33,10 @@ class FirstViewController: UIViewController {
         self.lbWaitingTime.text = "--"
         self.lbGoodTimeForLunchSmile.text = ":|"
         
+        Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(FirstViewController.updateData), userInfo: nil, repeats: true)
+    }
+
+    func updateData() {
         APIManager.getAPIdata() { json in
             
             if let wait = json["tempoEspera"] as? Float {
@@ -61,26 +65,11 @@ class FirstViewController: UIViewController {
                     self.lbGoodTimeForLaunch.text = "Agora parece que está meio cheio. Não quer tentar ir um pouco mais tarde?"
                     self.lbGoodTimeForLunchSmile.text = ":("
                     self.lbGoodTimeForLaunchBG.backgroundColor = UIColor.dangerRed
-                } // else if can == 0 {
-//                    self.lbGoodTimeForLaunch.text = "Agora parece estar meio cheio, não quer tentar ir mais tarde?"
-//                    self.lbGoodTimeForLunchSmile.text = ":|"
-//                    self.lbGoodTimeForLaunchBG.backgroundColor = UIColor.dangerRed
-//                }
+                }
             }
             
             print("Data: \(json)")
         }
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        
     }
     
     func goToProfile(){

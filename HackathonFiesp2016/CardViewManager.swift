@@ -75,6 +75,18 @@ class APIManager {
     }
     
     
+//    class func keepUpdatingAPI(completion: @escaping (_ json: JsonObject)->()) {
+    
+////        for bla {
+//        
+//            APIManager.getAPIdata(){ json in
+//                completion(json)
+//            }
+//        
+////        }
+//    }
+    
+    
     
     
 }
