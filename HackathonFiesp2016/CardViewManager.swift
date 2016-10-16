@@ -55,17 +55,18 @@ typealias JsonObject = [String: AnyObject]
 
 class APIManager {
     
-    private static let serverUrl = ""
+    private static let serverUrl = "http://zebra.azurewebsites.net/"
     
-    class func getEstimatedTime(completion: @escaping (_ minutes: Float)->()) {
+    class func getAPIdata(completion: @escaping (_ json: JsonObject)->()) {
         
-        let url = APIManager.serverUrl + ""
+        let url = APIManager.serverUrl + "api/refeitorio"
         
         Alamofire.request(url).responseJSON { response in
-            if let json = response.result.value as? JsonObject {
-                print("JSON: \(json)")
+            if let json = response.result.value as? JsonObject,
+                let data = json["data"] as? JsonObject {
+//                print("JSON: \(json)")
                 
-                completion(10)  //TODO: Colocar minutos
+                completion(data)  //TODO: Colocar minutos
             } else {
                 print(#function, "Json conversion error")
             }

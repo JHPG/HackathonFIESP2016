@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		33CBAF062505DE567223ADAB /* Pods_HackathonFiesp2016.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 696EFF66E1FBB0D697D82574 /* Pods_HackathonFiesp2016.framework */; };
+		D66BA14C1DB32E4D000E77BC /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66BA14B1DB32E4D000E77BC /* TicketViewController.swift */; };
+		D66BA14E1DB32ED3000E77BC /* OnlyShadowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66BA14D1DB32ED3000E77BC /* OnlyShadowViewController.swift */; };
+		D66BA1501DB33A51000E77BC /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66BA14F1DB33A51000E77BC /* Colors.swift */; };
 		D680EDAD1DB3074B00C784C8 /* CardViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D680EDAC1DB3074B00C784C8 /* CardViewManager.swift */; };
 		D6ADA9321DB2B1CA00E52B15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ADA9311DB2B1CA00E52B15 /* AppDelegate.swift */; };
 		D6ADA9341DB2B1CA00E52B15 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ADA9331DB2B1CA00E52B15 /* RestaurantViewController.swift */; };
@@ -25,6 +28,9 @@
 		4D5D946F140526840228D568 /* Pods-HackathonFiesp2016.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackathonFiesp2016.release.xcconfig"; path = "Pods/Target Support Files/Pods-HackathonFiesp2016/Pods-HackathonFiesp2016.release.xcconfig"; sourceTree = "<group>"; };
 		696EFF66E1FBB0D697D82574 /* Pods_HackathonFiesp2016.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackathonFiesp2016.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3A9A3CB01EE20742E3A7D36 /* Pods-HackathonFiesp2016.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackathonFiesp2016.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HackathonFiesp2016/Pods-HackathonFiesp2016.debug.xcconfig"; sourceTree = "<group>"; };
+		D66BA14B1DB32E4D000E77BC /* TicketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
+		D66BA14D1DB32ED3000E77BC /* OnlyShadowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnlyShadowViewController.swift; sourceTree = "<group>"; };
+		D66BA14F1DB33A51000E77BC /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		D680EDAC1DB3074B00C784C8 /* CardViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewManager.swift; sourceTree = "<group>"; };
 		D6ADA92E1DB2B1CA00E52B15 /* HackathonFiesp2016.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackathonFiesp2016.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6ADA9311DB2B1CA00E52B15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +67,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D66BA14A1DB32E02000E77BC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D6ADA9331DB2B1CA00E52B15 /* RestaurantViewController.swift */,
+				D6ADA9351DB2B1CA00E52B15 /* MenuViewController.swift */,
+				D66BA14B1DB32E4D000E77BC /* TicketViewController.swift */,
+				D66BA14D1DB32ED3000E77BC /* OnlyShadowViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		D6ADA9251DB2B1C900E52B15 = {
 			isa = PBXGroup;
 			children = (
@@ -82,10 +99,10 @@
 		D6ADA9301DB2B1CA00E52B15 /* HackathonFiesp2016 */ = {
 			isa = PBXGroup;
 			children = (
+				D66BA14A1DB32E02000E77BC /* ViewControllers */,
 				D6ADA9311DB2B1CA00E52B15 /* AppDelegate.swift */,
-				D6ADA9331DB2B1CA00E52B15 /* RestaurantViewController.swift */,
-				D6ADA9351DB2B1CA00E52B15 /* MenuViewController.swift */,
 				D680EDAC1DB3074B00C784C8 /* CardViewManager.swift */,
+				D66BA14F1DB33A51000E77BC /* Colors.swift */,
 				D6ADA9371DB2B1CA00E52B15 /* Main.storyboard */,
 				D6ADA9471DB2E1AA00E52B15 /* SF */,
 				D6ADA93A1DB2B1CA00E52B15 /* Assets.xcassets */,
@@ -242,9 +259,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D66BA14E1DB32ED3000E77BC /* OnlyShadowViewController.swift in Sources */,
 				D680EDAD1DB3074B00C784C8 /* CardViewManager.swift in Sources */,
 				D6ADA9361DB2B1CA00E52B15 /* MenuViewController.swift in Sources */,
+				D66BA1501DB33A51000E77BC /* Colors.swift in Sources */,
 				D6ADA9321DB2B1CA00E52B15 /* AppDelegate.swift in Sources */,
+				D66BA14C1DB32E4D000E77BC /* TicketViewController.swift in Sources */,
 				D6ADA9341DB2B1CA00E52B15 /* RestaurantViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

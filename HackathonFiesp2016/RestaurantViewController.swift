@@ -16,7 +16,8 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var lbNumberLunched: UILabel!
     @IBOutlet weak var lbGoodTimeForLaunch: UILabel!
     @IBOutlet weak var lbGoodTimeForLunchSmile: UILabel!
-    @IBOutlet weak var lbPoints: UILabel!
+    @IBOutlet weak var lbGoodTimeForLaunchBG: UIView!
+//    @IBOutlet weak var lbPoints: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,37 @@ class FirstViewController: UIViewController {
         
         let pButton = UIBarButtonItem(title: "Perfil", style: UIBarButtonItemStyle.plain, target: self, action: #selector(FirstViewController.goToProfile))
         navigationItem.rightBarButtonItem = pButton
+        
+        APIManager.getAPIdata() { json in
+            
+            if let wait = json["tempoEspera"] as? Float {
+                if wait > 5 {
+                    self.lbWaitingTime.textColor = UIColor.dangerRed
+                } else {
+                    self.lbWaitingTime.textColor = UIColor.okGreen
+                }
+                self.lbWaitingTime.text = "\(wait) min"
+            } else { self.lbWaitingTime.text = "--" }
+            
+            if let num = json["porPessoasalmocando"] as? Int {
+                self.lbNumberLunched.text = "\(num) pessoas já almoçaram"
+            } else { self.lbNumberLunched.text = "--" }
+            
+            if let can = json["podeAlmocar"] as? Bool {
+                if can {//== 1 {
+                    self.lbGoodTimeForLunchSmile.text = ":)"
+                    self.lbGoodTimeForLaunchBG.backgroundColor = UIColor.okGreen
+                } else { //if can == 0 {
+                    self.lbGoodTimeForLunchSmile.text = ":|"
+                    self.lbGoodTimeForLaunchBG.backgroundColor = UIColor.dangerRed
+                } // else if can == -1 {
+//                    self.lbGoodTimeForLunchSmile.text = ":("
+//                    self.lbGoodTimeForLaunchBG.backgroundColor = UIColor.dangerRed
+//                }
+            } else { self.lbGoodTimeForLunchSmile.text = ":|" }
+            
+            print(json)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,7 +72,9 @@ class FirstViewController: UIViewController {
     }
     
     func goToProfile(){
-        
+        let storyboard = UIStoryboard(name:"Main", bundle:nil);
+        let controller = storyboard.instantiateViewController(withIdentifier:"profileView");
+        self.navigationController?.pushViewController(controller, animated: true)
     }
 
 }

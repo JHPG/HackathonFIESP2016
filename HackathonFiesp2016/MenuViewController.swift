@@ -31,5 +31,10 @@ class SecondViewController: UIViewController {
         resignFirstResponder()
     }
     
+    func goToProfile(){
+        let storyboard = UIStoryboard(name:"Main", bundle:nil);
+        let controller = storyboard.instantiateViewController(withIdentifier:"profileView");
+        self.navigationController?.pushViewController(controller, animated: true)
+    }
 }
 
