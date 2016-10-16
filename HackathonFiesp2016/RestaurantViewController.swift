@@ -28,6 +28,11 @@ class FirstViewController: UIViewController {
         let pButton = UIBarButtonItem(title: "Perfil", style: UIBarButtonItemStyle.plain, target: self, action: #selector(FirstViewController.goToProfile))
         navigationItem.rightBarButtonItem = pButton
         
+        self.lbGoodTimeForLaunch.text = "--"
+        self.lbNumberLunched.text = "--"
+        self.lbWaitingTime.text = "--"
+        self.lbGoodTimeForLunchSmile.text = ":|"
+        
         APIManager.getAPIdata() { json in
             
             if let wait = json["tempoEspera"] as? Float {
@@ -36,27 +41,34 @@ class FirstViewController: UIViewController {
                 } else {
                     self.lbWaitingTime.textColor = UIColor.okGreen
                 }
-                self.lbWaitingTime.text = "\(wait) min"
-            } else { self.lbWaitingTime.text = "--" }
+                self.lbWaitingTime.text = "\(Int(wait)) min"
+            }
             
-            if let num = json["porPessoasalmocando"] as? Int {
+            if let num = json["qtdPessoasAlmocaram"] as? Int {
                 self.lbNumberLunched.text = "\(num) pessoas já almoçaram"
-            } else { self.lbNumberLunched.text = "--" }
+            }
+            
+            if let num = json["porPessoasAlmocaram"] as? Float {
+                self.lbPercentLunched.text = "\(Int(num)) %"
+            }
             
             if let can = json["podeAlmocar"] as? Bool {
                 if can {//== 1 {
+                    self.lbGoodTimeForLaunch.text = "Agora parece ser uma boa hora para ir almoçar!"
                     self.lbGoodTimeForLunchSmile.text = ":)"
                     self.lbGoodTimeForLaunchBG.backgroundColor = UIColor.okGreen
-                } else { //if can == 0 {
-                    self.lbGoodTimeForLunchSmile.text = ":|"
+                } else { //if can == -1 {
+                    self.lbGoodTimeForLaunch.text = "Agora parece estar meio cheio, não quer tentar ir mais tarde?"
+                    self.lbGoodTimeForLunchSmile.text = ":("
                     self.lbGoodTimeForLaunchBG.backgroundColor = UIColor.dangerRed
-                } // else if can == -1 {
-//                    self.lbGoodTimeForLunchSmile.text = ":("
+                } // else if can == 0 {
+//                    self.lbGoodTimeForLaunch.text = "Agora parece estar meio cheio, não quer tentar ir mais tarde?"
+//                    self.lbGoodTimeForLunchSmile.text = ":|"
 //                    self.lbGoodTimeForLaunchBG.backgroundColor = UIColor.dangerRed
 //                }
-            } else { self.lbGoodTimeForLunchSmile.text = ":|" }
+            }
             
-            print(json)
+            print("Data: \(json)")
         }
     }
 
